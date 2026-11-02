@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+    <title>Solutions · Grade 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="experiment.css" />
+    <script src="script.js" defer></script>
+    <script src="experiment.js" defer></script>
+    <link rel="stylesheet" href="science-quiz.css" />
+    <script src="science-quiz.js" defer></script>
+  </head>
+  <body>
+    <main class="presentation" aria-label="Presentasi Solutions Grade 5">
+      <header class="toolbar">
+        <span class="title">Solutions <span>Grade 5</span></span>
+        <button id="fullscreen" type="button" title="Layar penuh (F)">Layar penuh ⛶</button>
+      </header>
+      <section class="stage" aria-label="Slide presentasi">
+        <img id="slide" src="slides/slide-1.png" alt="Slide 1" draggable="false" />
+        <div id="video-slide" hidden>
+          <iframe id="video" title="Video YouTube — Slide 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <a href="https://www.youtube.com/watch?v=rkRZrmoJ2C0" target="_blank" rel="noopener noreferrer">Buka di YouTube ↗</a>
+        </div>
+        <section id="quiz-slide" aria-labelledby="quiz-title" hidden>
+          <div class="quiz-canvas">
+            <svg class="quiz-decor" viewBox="0 0 1600 900" aria-hidden="true">
+              <g stroke="#547eae" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+                <g transform="translate(36 24) rotate(12 65 65)"><path d="M48 112 10 175" stroke="#344c70" stroke-width="24"/><circle cx="78" cy="66" r="59" fill="#b5e6fb"/><path d="M45 58 Q48 30 75 27" stroke="white" stroke-width="13"/></g>
+                <g transform="translate(275 24) rotate(-6)"><path d="M0 12 32 0 170 0 170 25 32 25Z" fill="#fff0a4"/><path d="M32 0H165V25H32Z" fill="#8b9ee1"/><path d="M40 12H155" stroke="white" stroke-width="4"/></g>
+                <path d="M1450 56 1520 28Q1550 20 1558 43Q1566 65 1540 76L1470 102Q1447 110 1440 92Q1434 77 1456 69L1522 44" fill="none"/>
+                <g transform="translate(1455 690)"><path d="M35 45Q135 72 101 148H26" fill="none" stroke-width="20"/><path d="m45 4-24 75 35 12 24-75Z" fill="#8bb5dc"/><path d="m45 4 8-24 34 12-7 24M9 107l65 16" stroke="#22466f" stroke-width="16"/><path d="M10 159H120" stroke-width="20"/></g>
+              </g>
+              <g fill="#638ec5"><path d="m221 68 7 19 20 7-20 7-7 20-7-20-20-7 20-7Z"/><path d="m1535 234 10 26 27 10-27 10-10 27-10-27-26-10 26-10Z"/><path d="m54 575 8 21 22 8-22 8-8 22-8-22-22-8 22-8Z"/></g>
+              <g fill="#ffda62"><path d="m1378 70 6 16 18 6-18 6-6 18-6-18-17-6 17-6Z"/><circle cx="95" cy="770" r="9"/><circle cx="1500" cy="175" r="9"/></g>
+            </svg>
+            <div class="quiz-board">
+              <header class="quiz-header">
+                <h1 id="quiz-title">TRUE OR FALSE QUIZ <small>KUIS BENAR ATAU SALAH</small></h1>
+                <h2>Soluble and Insoluble Substances <span>Zat yang Larut dan Tidak Larut</span></h2>
+                <p>Read each statement and decide whether it is TRUE or FALSE.<br><span lang="id">Bacalah setiap pernyataan dan tentukan apakah BENAR atau SALAH.</span></p>
+              </header>
+              <div class="quiz-grid" id="quiz-questions"></div>
+              <footer class="quiz-footer"><p>Think like a scientist! <span>Berpikirlah seperti ilmuwan!</span></p><button id="reset-quiz" type="button">RESET QUIZ / ULANGI KUIS ↻</button></footer>
+            </div>
+          </div>
+        </section>
+        <section id="experiment-slide" aria-labelledby="experiment-title" hidden></section>
+        <section id="science-quiz-slide" aria-label="Science quiz / Kuis sains" hidden></section>
+        <p id="error" role="alert" hidden>Gambar slide tidak bisa dimuat. Periksa file di folder slides.</p>
+      </section>
+      <footer class="controls">
+        <button id="previous" type="button" aria-label="Slide sebelumnya">← <span>Sebelumnya</span></button>
+        <div class="position">
+          <span id="counter" role="status" aria-live="polite">1 / 8</span>
+          <nav id="dots" aria-label="Pilih slide"></nav>
+        </div>
+        <button id="next" type="button" aria-label="Slide berikutnya"><span>Berikutnya</span> →</button>
+      </footer>
+      <p class="hint">← → pindah slide <span>·</span> F layar penuh <span>·</span> Geser di HP</p>
+    </main>
+  </body>
+</html>

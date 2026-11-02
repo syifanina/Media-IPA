@@ -1,0 +1,69 @@
+/* Styles scoped to slide 7; previous slides retain their existing styling. */
+#experiment-slide { position: relative; flex: none; color-scheme: light; }
+#experiment-slide[hidden], #experiment-slide [hidden] { display: none !important; }
+#experiment-slide .exp-canvas { position: absolute; width: 1600px; height: 900px; transform-origin: top left; overflow: hidden; background: #cfd8ff; color: #183e70; font-family: 'Arial Rounded MT Bold', 'Trebuchet MS', sans-serif; }
+#experiment-slide .exp-board { position: absolute; inset: 48px 110px 38px; padding: 18px 32px; background: white; border-radius: 75px; box-shadow: 9px 12px #afbfeb; }
+#experiment-slide .exp-header { text-align: center; }
+#experiment-slide .exp-header > p { font-size: 18px; font-weight: bold; letter-spacing: 2px; margin: 0 0 5px; }
+#experiment-slide h1 { display: inline-block; margin: 0; padding: 7px 45px; border-radius: 24px; background: #254f85; color: white; font-size: 38px; line-height: 1.1; box-shadow: 0 5px #bfd0f5; }
+#experiment-slide h2 { font-size: 24px; margin: 10px 0 8px; }
+#experiment-slide .exp-question { background: #edf3ff; border-radius: 18px; padding: 7px; font-size: 21px; font-weight: bold; }
+#experiment-slide .exp-question span { display: block; font-size: 19px; margin-top: 3px; font-weight: normal; }
+#experiment-slide .exp-lab { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 12px; height: 404px; }
+#experiment-slide .exp-glass-card { border: 2px solid #e9dfbc; background: #fff9e7; border-radius: 26px; padding: 13px 10px 8px; text-align: center; }
+#experiment-slide .exp-cold { background: #edf6ff; border-color: #d4e6f8; }
+#experiment-slide h3 { font-size: 21px; margin: 0; }
+#experiment-slide .exp-temperature { display: flex; justify-content: center; align-items: center; gap: 9px; font-size: 24px; font-weight: bold; color: #ba621f; height: 36px; }
+#experiment-slide .exp-cold .exp-temperature { color: #3878b2; }
+#experiment-slide .exp-temperature svg { width: 18px; height: 31px; }
+#experiment-slide .exp-clock output { display: block; font: bold 31px/1.1 ui-monospace, monospace; letter-spacing: 3px; }
+#experiment-slide .exp-clock span { display: block; font-size: 16px; margin-top: 3px; }
+#experiment-slide .exp-glass { width: 100%; height: 236px; display: block; }
+#experiment-slide .exp-glass-status { font-size: 18px; font-weight: bold; margin: 0; }
+#experiment-slide .exp-results-panel { background: #edfbf2; border: 2px solid #d1efdf; border-radius: 26px; padding: 18px; text-align: center; }
+#experiment-slide .exp-wait { padding-top: 28px; }
+#experiment-slide .exp-big-star { font-size: 65px; color: #dcae32; }
+#experiment-slide h3 span, #experiment-slide h4 span, #experiment-slide .exp-wait p span { display: block; margin-top: 5px; }
+#experiment-slide .exp-wait h3 { font-size: 26px; }
+#experiment-slide .exp-wait p { font-size: 21px; line-height: 1.35; }
+#experiment-slide .exp-results h3 { font-size: 22px; }
+#experiment-slide .exp-results h3 span { font-size: 19px; }
+#experiment-slide .exp-result-time { font-size: 22px; line-height: 1.5; margin: 10px 0 0; }
+#experiment-slide .exp-result-time strong { margin-left: 22px; }
+#experiment-slide .exp-note { font-size: 15px; margin: 3px 0 12px; }
+#experiment-slide h4 { font-size: 21px; margin: 0 0 12px; }
+#experiment-slide h4 span { font-size: 19px; font-weight: normal; }
+#experiment-slide button { font: bold 18px 'Trebuchet MS', sans-serif; border: 2px solid #92b0cd; color: #234a78; background: white; border-radius: 14px; box-shadow: 0 3px #c8d7e7; padding: 9px 15px; min-height: 44px; }
+#experiment-slide button:hover:not(:disabled) { background: #dcecff; border-color: #365f91; }
+#experiment-slide button:focus-visible { outline: 4px solid #315f99; outline-offset: 3px; }
+#experiment-slide button:disabled { opacity: .45; }
+#experiment-slide .exp-results button { display: block; width: 100%; margin-bottom: 8px; font-size: 18px; }
+#experiment-slide button[aria-pressed="true"] { border-color: #254f85; background: #dcecff; }
+#experiment-slide .exp-feedback { font-size: 21px; font-weight: bold; min-height: 28px; margin: 10px 0 0; }
+#experiment-slide .exp-success { color: #196342; animation: exp-celebrate .6s ease-in-out 2; }
+#experiment-slide .exp-retry { color: #ac293b; }
+#experiment-slide .exp-controls { display: flex; justify-content: center; gap: 16px; margin-top: 12px; }
+#experiment-slide .exp-controls button { font-size: 20px; min-width: 240px; background: #fff0a9; }
+#experiment-slide .exp-controls button span { display: block; font-size: 17px; margin-top: 2px; }
+#experiment-slide .exp-controls [data-action="start"] { background: #d7f1e1; }
+#experiment-slide .exp-controls [data-action="reset"] { background: #edf3ff; min-width: 150px; }
+#experiment-slide .exp-controls [data-action="speed"] { background: #f1efff; min-width: 190px; }
+#experiment-slide .exp-status { text-align: center; font-size: 17px; margin: 9px 0; }
+#experiment-slide .exp-conclusion { background: #edfbf2; border-radius: 15px; padding: 8px 14px; text-align: center; }
+#experiment-slide .exp-conclusion strong { font-size: 17px; }
+#experiment-slide .exp-conclusion p { font-size: 20px; margin: 3px 0 0; line-height: 1.2; }
+#experiment-slide .exp-conclusion span { display: block; font-size: 19px; }
+#experiment-slide .exp-disclaimer { position: absolute; bottom: 8px; left: 0; right: 0; text-align: center; font-size: 15px; margin: 0; color: #526787; }
+#experiment-slide .exp-steam { animation: exp-steam 2.8s ease-in-out infinite; }
+@keyframes exp-steam { 0%,100% { opacity: .4; transform: translateY(3px); } 50% { opacity: .8; transform: translateY(-4px); } }
+@keyframes exp-celebrate { 50% { transform: scale(1.08); } }
+@media (prefers-reduced-motion: reduce) { #experiment-slide .exp-steam, #experiment-slide .exp-success { animation: none; } }
+#experiment-slide .exp-header > p { font-size: 16px; line-height: 18px; margin-bottom: 4px; }
+#experiment-slide h1 { display: block; max-width: 930px; margin: 0 auto; font-size: 36px; line-height: 40px; padding: 6px 30px; }
+#experiment-slide h2 { font-size: 22px; line-height: 25px; margin: 8px 0 6px; }
+#experiment-slide .exp-question { font-size: 20px; line-height: 23px; padding: 6px; }
+#experiment-slide .exp-question span { font-size: 18px; line-height: 21px; }
+#experiment-slide .exp-lab { height: 380px; }
+#experiment-slide .exp-glass { height: 212px; }
+#experiment-slide .exp-status { line-height: 20px; margin: 5px 0; }
+#experiment-slide .exp-conclusion { padding: 6px 14px; }
