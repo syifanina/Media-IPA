@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+    <title>Keberagaman Kebudayaan Indonesia · IPAS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="presentation" aria-label="Presentasi Keberagaman Kebudayaan Indonesia">
+      <header class="toolbar">
+        <span class="title">Keberagaman Kebudayaan Indonesia <span>IPAS</span></span>
+        <button id="fullscreen" type="button" title="Layar penuh (F)">Layar penuh ⛶</button>
+      </header>
+      <section class="stage" aria-label="Slide presentasi">
+        <img id="slide" src="slides/slide-1.png" alt="Keberagaman Kebudayaan Indonesia — slide 1 dari 9" draggable="false" />
+        <p id="error" role="alert" hidden>Gambar slide tidak bisa dimuat. Periksa file di folder slides.</p>
+      </section>
+      <footer class="controls">
+        <button id="previous" type="button" aria-label="Slide sebelumnya">← <span>Sebelumnya</span></button>
+        <div class="position">
+          <span id="counter" role="status" aria-live="polite">1 / 9</span>
+          <nav id="dots" aria-label="Pilih slide"></nav>
+        </div>
+        <button id="next" type="button" aria-label="Slide berikutnya"><span>Berikutnya</span> →</button>
+      </footer>
+      <p class="hint">← → pindah slide <span>·</span> F layar penuh <span>·</span> Geser di HP</p>
+    </main>
+  </body>
+</html>
