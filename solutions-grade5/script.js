@@ -8,6 +8,9 @@ const slides = [
     'slides/slide-6.png',
     { type: 'experiment' },
     { type: 'science-quiz' },
+    'slides/slide-9.png',
+    'slides/slide-10.png',
+    'slides/slide-11.png',
 ];
 
 const slide = document.querySelector('#slide');
